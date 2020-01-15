@@ -8,12 +8,14 @@
   <title>Hello PWA</title>
   <link rel="stylesheet" href="./main.css">
   <link rel="manifest" href="./manifest.json">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
   <h3>hello world</h3>
   <img src="./test.png">
   <script src="./run.js"></script>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js',{

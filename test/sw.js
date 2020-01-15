@@ -1,11 +1,12 @@
-// importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js");
-const cacheStorageKey = "minimal-pwa-14";
+const cacheStorageKey = "minimal-pwa-16";
 const cacheList = [
   '/',
   'index.html',
   'main.css',
   'test.png',
-  'run.js'
+  'run.js',
+  'https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js',
+  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
 ]
 
 self.addEventListener('install', e => {

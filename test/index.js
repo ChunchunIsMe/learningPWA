@@ -1,7 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 http.createServer((req, res) => {
-  console.log(req.url);
   const url = req.url === '/' ? '/index.html' : req.url;
   if (url === '/sw.js') {
     res.writeHead(200, {
